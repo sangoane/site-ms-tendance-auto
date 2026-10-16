@@ -1,0 +1,41 @@
+# Espace admin MS Tendance AUTO
+# ⚠️ Remplacez VOTRE-COMPTE-GITHUB par votre nom d'utilisateur GitHub
+backend:
+  name: github
+  repo: VOTRE-COMPTE-GITHUB/site-ms-tendance
+  branch: main
+
+locale: fr
+site_url: /
+media_folder: images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: stock
+    label: Stock
+    files:
+      - name: voitures
+        label: Mes voitures
+        file: data/voitures.json
+        fields:
+          - label: Voitures
+            name: voitures
+            widget: list
+            label_singular: voiture
+            summary: "{{fields.marque}} {{fields.modele}}"
+            fields:
+              - {label: "Marque", name: marque, widget: string}
+              - {label: "Modèle", name: modele, widget: string}
+              - {label: "Catégorie", name: cat, widget: select, options: [Citadine, Berline, Break, SUV, Monospace, Cabriolet, Coupé, Collection, Utilitaire]}
+              - {label: "Énergie", name: energie, widget: select, options: [Essence, Diesel, Hybride, Électrique, GPL], required: false}
+              - {label: "Boîte", name: boite, widget: select, options: [Manuelle, Automatique], required: false}
+              - {label: "Année", name: annee, widget: number, value_type: int, required: false}
+              - {label: "Kilométrage", name: km, widget: number, value_type: int, required: false}
+              - {label: "Prix (€) – vide = prix sur demande", name: prix, widget: number, value_type: int, required: false}
+              - {label: "Étiquette (ex. Nouveauté, Garantie 6 mois)", name: badge, widget: string, required: false}
+              - {label: "Vendue", name: vendu, widget: boolean, default: false}
+              - {label: "Description", name: desc, widget: text, required: false}
+              - label: "Photos (la première est la photo principale)"
+                name: photos
+                widget: list
+                field: {label: Photo, name: photo, widget: image}

@@ -1,0 +1,26 @@
+SITE MS TENDANCE AUTO – MISE EN LIGNE AVEC ESPACE ADMIN
+
+1. GitHub : créez un compte gratuit sur github.com.
+   Créez un dépôt (bouton "New repository") nommé : site-ms-tendance
+   Cliquez "uploading an existing file" et glissez TOUT le contenu de ce dossier
+   (index.html, admin, data, images). Validez avec "Commit changes".
+
+2. Dans admin/config.yml (sur GitHub, icône crayon pour modifier) :
+   remplacez VOTRE-COMPTE-GITHUB par votre nom d'utilisateur GitHub. Validez.
+
+3. Netlify : créez un compte gratuit sur netlify.com avec "Sign up with GitHub".
+   "Add new site" > "Import an existing project" > GitHub > site-ms-tendance > Deploy.
+   Le site est en ligne à une adresse en .netlify.app.
+
+4. Connexion à l'admin (une seule fois) :
+   - Sur GitHub : Settings > Developer settings > OAuth Apps > New OAuth App
+       Homepage URL : l'adresse de votre site Netlify
+       Authorization callback URL : https://api.netlify.com/auth/done
+     Copiez le Client ID et générez un Client Secret.
+   - Sur Netlify : réglages du site > OAuth (Access control) > Install provider > GitHub,
+     collez le Client ID et le Client Secret.
+
+5. Ajouter une voiture : allez sur VOTRE-SITE/admin, connectez-vous avec GitHub,
+   "Mes voitures" > ajoutez une voiture, ses photos, puis "Publier".
+   Le site se met à jour tout seul en 1 à 2 minutes.
+   Voiture vendue : cochez "Vendue" (ou supprimez-la de la liste).

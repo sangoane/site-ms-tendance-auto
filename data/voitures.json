@@ -1,0 +1,42 @@
+{
+  "voitures": [
+    {
+      "marque": "Mini",
+      "modele": "Countryman John Cooper Works ALL4",
+      "cat": "SUV",
+      "energie": "Essence",
+      "boite": "Automatique",
+      "annee": null,
+      "km": null,
+      "prix": null,
+      "badge": "Nouveauté",
+      "vendu": false,
+      "desc": "Version John Cooper Works à transmission intégrale ALL4. Intérieur cuir noir avec surpiqûres rouges, toit ouvrant panoramique, GPS d’origine.",
+      "photos": [
+        "/images/uploads/mini-1.jpg",
+        "/images/uploads/mini-2.jpg",
+        "/images/uploads/mini-3.jpg",
+        "/images/uploads/mini-4.jpg",
+        "/images/uploads/mini-5.jpg"
+      ]
+    },
+    {
+      "marque": "BMW",
+      "modele": "320i Cabriolet (E30)",
+      "cat": "Collection",
+      "energie": "Essence",
+      "boite": "Manuelle",
+      "annee": 1990,
+      "km": null,
+      "prix": null,
+      "badge": "Carte grise collection",
+      "vendu": false,
+      "desc": "Cabriolet E30 blanc, capote bordeaux, sellerie bordeaux et blanc, jantes BBS. Une vraie youngtimer.",
+      "photos": [
+        "/images/uploads/bmw-1.jpg",
+        "/images/uploads/bmw-2.jpg",
+        "/images/uploads/bmw-3.jpg"
+      ]
+    }
+  ]
+}
