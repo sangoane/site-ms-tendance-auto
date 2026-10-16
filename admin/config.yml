@@ -2,7 +2,7 @@
 # ⚠️ Remplacez VOTRE-COMPTE-GITHUB par votre nom d'utilisateur GitHub
 backend:
   name: github
-  repo: VOTRE-COMPTE-GITHUB/site-ms-tendance
+  repo: sangoane/site-ms-tendance-auto
   branch: main
 
 locale: fr
